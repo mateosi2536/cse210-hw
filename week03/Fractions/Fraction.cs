@@ -4,15 +4,11 @@ public class Fraction
 {
     private int _top;
     private int _bottom;
-
-    // Constructor with no parameters - initializes to 1/1
     public Fraction()
     {
         _top = 1;
         _bottom = 1;
     }
-
-    // Constructor with one parameter for top - initializes denominator to 1
     public Fraction(int top)
     {
         _top = top;
