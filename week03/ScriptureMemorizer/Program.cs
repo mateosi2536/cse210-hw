@@ -15,6 +15,7 @@ class Program
 
         while (!scripture.IsCompletelyHidden())
         {
+            Console.Clear();
             Console.WriteLine(scripture.GetDisplayText());
             Console.WriteLine("\nPress enter to continue or type 'quit' to finish:");
             
