@@ -60,5 +60,23 @@ public class Scripture
         
         return displayText.Trim();
     }
+
+    public int GetTotalWordCount()
+    {
+        return _words.Count;
+    }
+
+    public int GetVisibleWordCount()
+    {
+        int visibleCount = 0;
+        foreach (Word word in _words)
+        {
+            if (!word.IsHidden())
+            {
+                visibleCount++;
+            }
+        }
+        return visibleCount;
+    }
 }
 
